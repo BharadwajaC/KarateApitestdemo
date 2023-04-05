@@ -5,7 +5,7 @@ pipeline {
             steps{
                 script{
                     sh 'docker --version'
-                    sh 'docker build -t maven/baseline .'
+                    sh 'docker build -t maven/base .'
                 }
             }
         }

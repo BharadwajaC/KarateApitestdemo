@@ -22,8 +22,8 @@ CMD ["mvn"]
 RUN apk update
 RUN apk upgrade
 RUN apk add git
-RUN git clone https://github.com/BharadwajaC/DemoAPiTest.git
-RUN chmod -R 777 DemoAPiTest
-WORKDIR /DemoAPiTest
+RUN git clone https://github.com/BharadwajaC/KarateApitestdemo.git
+RUN chmod -R 777 KarateApitestdemo
+WORKDIR /KarateApitestdemo
 RUN mvn -v
 RUN mvn clean test
