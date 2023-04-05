@@ -13,7 +13,7 @@ Feature: Organization List API
     Given url 'http://ec2-3-6-166-37.ap-south-1.compute.amazonaws.com:9091/customer/v1/temp/save'
     And request {firstName:'#(name)',lastName:'#(email)',fullName:'#(gender)',mobileno:'#(status)'}
     When method POST
-    Then status 200
+    Then status 201
     * print response
 
     Examples: 
