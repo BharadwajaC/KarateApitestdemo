@@ -22,9 +22,8 @@ CMD ["mvn"]
 RUN apk update
 RUN apk upgrade
 RUN apk add git
-RUN git rm -r --cached .
+ARG CACHEBUST=1
 RUN git clone https://github.com/BharadwajaC/KarateApitestdemo.git
-RUN git rm -r --cached .
 RUN chmod -R 777 KarateApitestdemo
 WORKDIR /KarateApitestdemo
 RUN mvn -v
