@@ -28,3 +28,6 @@ RUN chmod -R 777 KarateApitestdemo
 WORKDIR /KarateApitestdemo
 RUN mvn -v
 RUN mvn clean test
+RUN git add .
+RUN git commit -m "Reportsadded"
+RUN git push
