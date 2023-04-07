@@ -6,7 +6,7 @@ pipeline {
                 script{
                     sh 'docker --version'
                     sh 'docker build -t maven/base .'
-                    sh 'docker run --name mavenbase -d -i -t maven/base /bin/sh'
+                    sh 'docker run -d -i -t maven/base /bin/sh'
                 }
             }
         }
