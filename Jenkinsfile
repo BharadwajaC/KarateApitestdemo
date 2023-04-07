@@ -5,7 +5,7 @@ pipeline {
             steps{
                 script{
                     sh 'docker --version'
-                    sh 'docker build -t maven/base .'
+                    sh 'docker build -build-arg CACHEBUST=$(date +%s) -t maven/base .'
                     sh 'docker run -d -i -t maven/base /bin/sh'
                 }
             }
