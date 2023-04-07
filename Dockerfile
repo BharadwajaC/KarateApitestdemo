@@ -28,8 +28,3 @@ RUN chmod -R 777 KarateApitestdemo
 WORKDIR /KarateApitestdemo
 RUN mvn -v
 RUN mvn clean test
-RUN git config --global user.email "bharadwaja@coreium.io"
-RUN git config --global user.name "BharadwajaC"
-RUN git add .
-RUN git commit -m "Reportsadded"
-RUN git push
