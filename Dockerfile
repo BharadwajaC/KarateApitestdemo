@@ -23,7 +23,7 @@ RUN apk update
 RUN apk upgrade
 RUN apk add git
 ARG CACHEBUST=2
-RUN git clone https://github.com/BharadwajaC/KarateApitestdemo.git
+RUN git clone https://github.com/BharadwajaC/KarateApitestdemo.git --no-cache git clone
 RUN chmod -R 777 KarateApitestdemo
 WORKDIR /KarateApitestdemo
 RUN mvn -v
